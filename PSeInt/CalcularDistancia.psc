@@ -11,16 +11,21 @@
 //		Salida: La velocidad.
 
 Algoritmo CalcularDistancia
-	Definir distancia, tiempo, velocidad Como Real;
-	// Primer punto:
-	velocidad = 80;
-	tiempo = 10;
-	distancia = velocidad * tiempo;
-	Escribir "Distancia entre Bogotá y Medellín de un auto que su velocidad promedio fue de 80 Km/h y el tiempo fue 10 horas es:", distancia;
+
+	Escribir "Distancia entre Bogotá y Medellín de un auto que su velocidad ";
+	Escribir "promedio fue de 80 Km/h y el tiempo fue 10 horas es:", obtenerDistancia(80, 10);
 	
-	// Segundo punto:
-	distancia = 18;
-	tiempo = 0.25;
-	velocidad = distancia / tiempo;
-	Escribir "La velocidad de un auto entre Medellín y Envigado cuya distancia es de 18 KM y el tiempo del recorrido duró 15 minutos es: ", velocidad;
+	Escribir "La velocidad de un auto entre Medellín y Envigado cuya ";
+	Escribir "distancia es de 18 KM y el tiempo del recorrido duró 15 minutos es: ", obtenerVelocidad(18,0.25);
 FinAlgoritmo
+
+funcion distancia <- obtenerDistancia(velocidad, tiempo)
+	Definir distancia Como Entero;
+	distancia = velocidad * tiempo ;
+FinFuncion
+
+funcion velocidad <- obtenerVelocidad(distancia, tiempo)
+	Definir velocidad Como Real;
+	velocidad = distancia / tiempo; 
+FinFuncion
+	
