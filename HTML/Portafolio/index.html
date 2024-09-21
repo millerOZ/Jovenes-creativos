@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="icon" href="./soda.png">
+</head>
+
+<body>
+    <header>
+        <h1>Portafolio </h1>
+        <nav>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#Proyecto">Proyecto</a>
+            <a href="https://github.com/millerOZ/Jovenes-creativos" target="_blank" rel="noreferrer">Github</a>
+        </nav>
+
+    </header>
+    <video controls width="320" height="240" src="./video.mp4"></video>
+
+
+    <audio controls>
+        <source src="./midudev.mp3" type="audio/mp3">
+    </audio>
+    <main>
+        <p>+5 años de experiencia como <strong>Ingeniero de sofware</strong></p>
+        <h2 id="experiencia">Experiencia</h2>
+
+        <ul type="1" start="10">
+            <li>Tata Consulting - 2017</li>
+            <li>Entelcom - 2018</li>
+            <li value="33">Sofka - 2024</li>
+        </ul>
+        <a download href="./soda.png">
+            <img alt='es una imagen de una soda'
+                src="https://images.pexels.com/photos/27034673/pexels-photo-27034673/free-photo-of-cachorro-de-zorro-en-la-hierba.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                width='300' height='300'>
+        </a>
+
+        <aside>
+            <header>
+                <h3 id="Proyecto">Mis tecnologias </h3>
+                <ol type='a'>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+
+                </ol>
+            </header>
+        </aside>
+
+        <section>
+            <article>
+                <header>
+                    <h2 id="Proyecto">Sitio web corportativo</h2>
+                </header>
+                <p>Proyecto de la comunidad de jovenes creativos</p>
+                <footer>
+                    <small>tecnologias utilizadas: html, css, javascript</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2 id="Proyecto">Sitio web corportativo</h2>
+                </header>
+                <p>Proyecto de la comunidad de jovenes creativos</p>
+                <footer>
+                    <small>tecnologias utilizadas: html, css, javascript</small>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <h2>Preguntas frecuentes ? </h2>
+            <details>
+                <summary>Que estudios tienes ?</summary>
+                <p>Estudie en la Universidad nacional de Colombia</p>
+            </details>
+            <details open>
+                <summary>Cuales son tus hobbies ?</summary>
+                <p>Me gusta ir al gym, y salir a caminar </p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Formulario de contacto </h2>
+            <form action="/" method="post">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <div>
+                        <label>Nombre
+                            <input type="text" name="name" placeholder="Ingrese nombre" required>
+                        </label>
+                    </div>
+                    <label for="">Email
+                        <input type="email" placeholder="ingrese correo" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legeng>Informacion de contacto</legend>
+                        <label>Teléfono</label>
+                        <input type="tel" name="tel" placeholder="3508973434" required pattern="[0-9]{9}">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Otros</legend>
+                    <div>
+                        <label for="why">por que quieres contactar?</label>
+                        <select name="why" id="why">
+                            <option value="1">Trabajo</option>
+                            <option value="1">Duda</option>
+                            <option value="1">Mas informacion</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="term">Aceptas los terminos?</label>
+                        <input type="checkbox" id="term" name="term" required>
+                    </div>
+                    <div>
+                        <datalist id="languaje">
+                            <option value="Javascript"></option>
+                            <option value="Java"></option>
+                            <option value="Python"></option>
+                            <option value="C#"></option>
+                            <option value="Fortran"></option>
+                        </datalist>
+                        <label for="">Con que legunaje quieres que te ayude?
+                            <input list="languaje" name="languaje">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Contactar</legend>
+                    <label>Comentario</label>
+                    <input type="text" id='comment' name="tel" placeholder="hola..">
+                </fieldset>
+
+                <button>Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="mikleer.ossa@gmaill.com"> Enviar un correo</a>
+        <a href="tel: +573508987990"> llamar por telefono</a>
+        <a href='https://wa.me/573508987990?text=Hola,%20quiero%20más%20información' target="_blank"
+            rel="noreferrer">whatsapp</a>
+    </footer>
+</body>
+
+</html>
