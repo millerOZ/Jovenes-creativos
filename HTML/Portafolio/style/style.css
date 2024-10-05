@@ -1,0 +1,30 @@
+label:has(:focus:invalid){
+    color: tomato
+}
+label:has(:focus:valid){
+    color: green
+}
+label:has(:focus-visible:invalid){
+    input {
+        outline-color: pink
+    }
+}
+label:has(:focus-visible:valid){
+    input {
+        outline-color: green
+    }
+}
+ span img  {
+    width: 25px;
+}
+.icon {
+    display: none;
+}
+
+label:has(:focus:valid) .icon-check {
+    display: unset;
+}
+label:has(:focus:invalid)
+icon-cancel {
+    display: unset;
+}
